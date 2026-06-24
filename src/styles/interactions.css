@@ -1,0 +1,58 @@
+/* ============================================================
+   Interaction polish — hover, focus, transitions (global)
+   ============================================================ */
+
+/* Anchor offset so sticky nav doesn't cover section headings */
+section[id], div[id] { scroll-margin-top: 96px; }
+
+/* Buttons */
+.btn-dark, .btn-outline, .nav__cta, .cta-btn, .visa-btn {
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease,
+              color .18s ease, border-color .18s ease;
+  cursor: pointer;
+}
+.btn-dark:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(10,20,32,0.28); }
+.btn-outline:hover { background: #0A1420; color: #fff; border-color: #0A1420; }
+.nav__cta:hover { background: #0A1420; color: #fff; }
+.visa-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(10,20,32,0.24); }
+.visa-btn--gold:hover { box-shadow: 0 12px 26px rgba(196,136,47,0.4); }
+.cta-btn--white:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(0,0,0,0.2); }
+.cta-btn--outline:hover,
+.cta-btn--outline-dim:hover { background: rgba(255,255,255,0.14); color: #fff; border-color: rgba(255,255,255,0.7); }
+
+/* Text links */
+.nav__link { transition: color .18s ease, opacity .18s ease; }
+.nav__link:hover { opacity: 1; color: #c4882f; }
+.link-gold, .link-gold-underline { transition: color .18s ease; }
+.link-gold:hover, .link-gold-underline:hover { color: #a06f22; }
+.topbar__phone { transition: color .18s ease; }
+.topbar__phone:hover { color: #fff; }
+
+/* Cards lift on hover */
+.feature, .program, .metric, .testimonial, .visa-card, .panel {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.feature:hover, .program:hover, .metric:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(10,20,32,0.10);
+  border-top-color: #c4882f;
+}
+.visa-card:hover { transform: translateY(-3px); box-shadow: 0 18px 38px rgba(10,20,32,0.12); }
+.testimonial:hover { transform: translateY(-4px); border-color: rgba(196,136,47,0.45); }
+.panel:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(10,20,32,0.22); }
+
+/* Keyboard focus visibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #c4882f;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}

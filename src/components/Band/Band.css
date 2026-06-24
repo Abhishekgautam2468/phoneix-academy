@@ -1,0 +1,22 @@
+.band {
+  background: #0A1420;
+  padding: 18px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.band__text { font-size: 14px; color: rgba(255,255,255,0.55); font-weight: 300; }
+.band__text strong { font-weight: 600; color: #D4A856; }
+.band__cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0A1420;
+  background: #c4882f;
+  padding: 9px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.band__cta:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(196,136,47,0.35); }

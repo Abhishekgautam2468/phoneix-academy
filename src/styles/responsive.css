@@ -1,0 +1,118 @@
+/* ============================================================
+   Layout width + responsive behavior (loaded last → wins)
+   ============================================================ */
+
+/* --- Make content fill wide screens (reduce empty side margins) --- */
+.services { max-width: 1680px; }
+.why__inner { max-width: 1200px; }
+.testimonials__inner,
+.practice__inner,
+.academy__inner,
+.visa__inner,
+.metrics__inner { max-width: 1680px; }
+
+/* ============================================================
+   TABLET / SMALL LAPTOP  (≤ 1040px)
+   ============================================================ */
+@media (max-width: 1040px) {
+  /* tighter horizontal gutters */
+  .topbar, .nav, .band { padding-left: 40px; padding-right: 40px; }
+  .hero { padding: 56px 40px 60px; }
+  .services { padding: 0 40px 56px; grid-template-columns: 1fr; }
+  .why, .testimonials, .practice, .cta, .visa, .metrics { padding: 56px 40px; }
+  .academy { padding: 0 40px 56px; }
+
+  /* hero collapses to a centered single column */
+  .hero__inner { grid-template-columns: 1fr; gap: 52px; max-width: 640px; text-align: center; }
+  .hero__content { max-width: none; }
+  .hero__lead { margin-left: auto; margin-right: auto; }
+  .hero__actions, .hero__trust { justify-content: center; }
+  .hero__showcase { max-width: 400px; margin: 0 auto; }
+
+  /* fluid headings */
+  .why__title, .visa__title, .testimonials__title { font-size: clamp(32px, 4.6vw, 52px); }
+  .cta__title { font-size: clamp(34px, 5vw, 56px); }
+  .practice__title, .academy__title, .metrics__title, .services__title { font-size: clamp(28px, 4vw, 44px); }
+
+  /* grids collapse */
+  .practice__inner { grid-template-columns: 1fr; gap: 40px; }
+  .practice__photo, .practice__img { min-height: 360px; }
+  .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
+  .academy__grid { grid-template-columns: repeat(3, 1fr); }
+  .metrics__grid { grid-template-columns: repeat(2, 1fr); }
+  .panel { min-height: 380px; }
+
+  /* program cards stack: image on top */
+  .visa-card { grid-template-columns: 1fr; }
+  .visa-art { order: -1; min-height: 280px; }
+  .visa-card__body,
+  .visa-card__body--right { padding: 40px; border: none; }
+
+  /* mobile nav */
+  .nav__links {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #FAFAF5;
+    border-bottom: 1px solid #E8E2D4;
+    box-shadow: 0 12px 24px rgba(10,20,32,0.08);
+    padding: 8px 0;
+    display: none;
+  }
+  .nav__links--open { display: flex; }
+  .nav__link { padding: 14px 40px; opacity: 1; font-size: 15px; }
+  .nav__link:hover { background: #F5F0E8; }
+  .nav__cta--mobile { display: block; margin: 8px 40px 12px; text-align: center; }
+  .nav__right .nav__cta { display: none; }
+  .nav__toggle { display: flex; }
+}
+
+/* ============================================================
+   PHONE  (≤ 640px)
+   ============================================================ */
+@media (max-width: 640px) {
+  .topbar { flex-direction: column; gap: 6px; padding: 10px 22px; text-align: center; }
+  .topbar__left { font-size: 12px; justify-content: center; flex-wrap: wrap; }
+  .topbar__right { gap: 12px; }
+
+  .nav, .band { padding-left: 22px; padding-right: 22px; }
+  .nav__links, .nav__link, .nav__cta--mobile { padding-left: 22px; padding-right: 22px; }
+  .nav__cta--mobile { margin-left: 22px; margin-right: 22px; }
+
+  .hero { padding: 40px 22px 48px; }
+  .hero__lead { font-size: 16px; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn-dark, .hero__actions .btn-outline { justify-content: center; }
+  .hero__accent { inset: 16px -14px -14px 14px; }
+  .hero__card { left: 12px; padding: 13px 18px 13px 13px; }
+  .hero__card-icon { width: 40px; height: 40px; }
+
+  .services { padding: 0 22px 44px; }
+  .why, .testimonials, .practice, .cta, .visa, .metrics { padding: 44px 22px; }
+  .academy { padding: 0 22px 44px; }
+
+  .testimonials__grid { grid-template-columns: 1fr; }
+  .academy__grid { grid-template-columns: repeat(2, 1fr); }
+  .metrics__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .visa-card__heading { flex-direction: column; align-items: flex-start; gap: 0; }
+  .visa-card__body, .visa-card__body--right { padding: 32px 24px; }
+
+  .band { flex-direction: column; gap: 6px; text-align: center; padding-top: 16px; padding-bottom: 16px; }
+
+  /* full-width CTA buttons */
+  .cta-btn { width: 100%; max-width: 360px; }
+}
+
+/* ============================================================
+   SMALL PHONE  (≤ 420px)
+   ============================================================ */
+@media (max-width: 420px) {
+  .academy__grid { grid-template-columns: 1fr; }
+  .metrics__grid { grid-template-columns: 1fr; }
+  .hero__title { font-size: 34px; }
+}

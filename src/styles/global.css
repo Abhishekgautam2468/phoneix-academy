@@ -1,0 +1,26 @@
+/* ============================================================
+   Phonix Advisory — global base styles
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a2e;
+  background: #F5F0E8;
+  min-width: 320px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.serif { font-family: 'Playfair Display', serif; }
+em { font-style: italic; }
+a { color: inherit; }
+
+/* gold period in the Phonix wordmark (nav + footer) */
+.dot { color: #c4882f; }

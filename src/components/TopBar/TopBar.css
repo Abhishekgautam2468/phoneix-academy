@@ -1,0 +1,36 @@
+.topbar {
+  background: #0A1420;
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  font-weight: 300;
+}
+.topbar__badge {
+  background: #c4882f;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: .04em;
+}
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+}
+.topbar__phone {
+  text-decoration: none;
+  color: #D4A856;
+  font-weight: 600;
+}
+.topbar__dot { color: rgba(255,255,255,0.2); }
