@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
     <section className="why">
       <div className="why__inner">
         <div className="eyebrow--gold">Why Choose Us</div>
-        <h2 className="why__title">Why learners choose <em>Phoenix Academy.</em></h2>
+        <h2 className="why__title">Why business owners choose <em>Phoenix Academy.</em></h2>
         <div className="feature-list">
           {features.map((f) => (
             <div key={f.title} className="feature">

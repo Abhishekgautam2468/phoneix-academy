@@ -34,10 +34,10 @@ export default function Footer() {
               <div className="footer__logo"><GraduationCap size={22} color="#c4882f" strokeWidth={2} /></div>
               <div>
                 <span className="footer__name">Phoenix<span className="dot">.</span> Academy</span>
-                <span className="footer__parent">A division of Phonix Advisory</span>
+                <span className="footer__parent">A division of Phoenix Business Advisory</span>
               </div>
             </div>
-            <p className="footer__tagline">Career development &amp; professional training — interview preparation, coaching, and global business readiness for real-world success.</p>
+            <p className="footer__tagline">Visa interview preparation &amp; migration readiness for established business owners — the training arm of Phoenix Business Advisory.</p>
             <div className="footer__socials">
               {socials.map(({ Icon, label }) => (
                 <a key={label} href="#" aria-label={label} className="footer__social"><Icon size={17} /></a>
@@ -48,10 +48,10 @@ export default function Footer() {
           {/* Programs */}
           <div className="footer__col">
             <h4 className="footer__col-title">Programs</h4>
-            <a href="#programs" className="footer__link">Interview Mastery</a>
-            <a href="#programs" className="footer__link">Career Acceleration</a>
-            <a href="#programs" className="footer__link">Business Migration Readiness</a>
-            <a href="#programs" className="footer__link">Entrepreneurship Development</a>
+            <a href="#programs" className="footer__link">Visa Interview Mastery</a>
+            <a href="#programs" className="footer__link">Business Case Presentation</a>
+            <a href="#programs" className="footer__link">Documentation Readiness</a>
+            <a href="#programs" className="footer__link">Country-Specific Briefing</a>
           </div>
 
           {/* Company */}
@@ -73,10 +73,10 @@ export default function Footer() {
         </div>
 
         <p className="footer__seo">
-          Phoenix Academy is a professional career development and training platform offering interview
-          preparation, career coaching, employability enhancement, business readiness programs,
-          leadership development, entrepreneurship training, and global opportunity guidance. Our mission
-          is to help individuals build successful careers and achieve long-term professional growth.
+          Phoenix Academy prepares established business owners and investors for their business migration
+          visa interview across the USA, Australia, New Zealand, and the European Union. Through expert
+          coaching, realistic mock interviews, business-case preparation, and documentation readiness, we
+          help applicants walk into their visa interview confident, consistent, and fully prepared.
         </p>
 
         <div className="footer__bottom">

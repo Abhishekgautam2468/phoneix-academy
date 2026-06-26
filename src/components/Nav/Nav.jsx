@@ -27,11 +27,11 @@ export default function Nav() {
         {links.map((l) => (
           <a key={l.href} href={l.href} className="nav__link" onClick={close}>{l.label}</a>
         ))}
-        <a href="#contact" className="nav__cta nav__cta--mobile" onClick={close}>Book Consultation</a>
+        <a href="#contact" className="nav__cta nav__cta--mobile" onClick={close}>Request a Consultation</a>
       </div>
 
       <div className="nav__right">
-        <a href="#contact" className="nav__cta">Book Consultation</a>
+        <a href="#contact" className="nav__cta">Request a Consultation</a>
         <button
           className="nav__toggle"
           aria-label={open ? 'Close menu' : 'Open menu'}

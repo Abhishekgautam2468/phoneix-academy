@@ -1,109 +1,110 @@
 // ============================================================
 // Phoenix Academy — site content (single source of truth)
+// Visa-interview preparation for business migration.
 // ============================================================
-import { Target, Users, Wrench, Handshake, Mic, Rocket, Globe, Lightbulb } from 'lucide-react'
+import { MessageSquare, Users, Briefcase, Globe, Mic, Presentation, FileCheck, MapPin } from 'lucide-react'
 
-// Decorative initials shown in the hero social-proof row
+// Decorative initials shown in the hero trust row
 export const avatars = [
-  { i: 'A', bg: '#1a3060' }, { i: 'D', bg: '#3a1a60' },
-  { i: 'P', bg: '#601a1a' }, { i: 'S', bg: '#1a6040' },
-  { i: 'R', bg: '#60401a' }, { i: 'M', bg: '#1a4060' },
+  { i: 'R', bg: '#1a3060' }, { i: 'M', bg: '#3a1a60' },
+  { i: 'A', bg: '#601a1a' }, { i: 'S', bg: '#1a6040' },
+  { i: 'K', bg: '#60401a' }, { i: 'P', bg: '#1a4060' },
 ]
 
 // Eight focus areas — shown as tags in the "What We Offer" section
 export const focusTags = [
-  'Interview Preparation',
-  'Career Coaching',
-  'Job Readiness Programs',
-  'Business Migration Readiness',
-  'International Career Guidance',
-  'Soft Skills & Communication',
-  'Resume & LinkedIn Optimization',
-  'Entrepreneurship & Global Business',
+  'Visa Interview Coaching',
+  'Mock Interview Sessions',
+  'Business Case Presentation',
+  'Documentation Readiness',
+  'Officer Q&A Preparation',
+  'Confidence & Communication',
+  'Country-Specific Briefings',
+  'Family Interview Prep',
 ]
 
 // "Why Choose Us" cards
 export const features = [
-  { Icon: Target, title: 'Industry-Focused Learning', desc: 'Programs designed around real employer expectations, current market trends, and practical business requirements.' },
-  { Icon: Users, title: 'Expert Mentorship', desc: 'Learn from experienced professionals who provide guidance beyond textbooks and theory.' },
-  { Icon: Wrench, title: 'Practical Skill Development', desc: 'Develop communication, interview, leadership, and professional skills that create measurable career growth.' },
-  { Icon: Handshake, title: 'Personalized Career Support', desc: 'Receive tailored advice, career planning support, and individual mentoring to achieve your goals.' },
+  { Icon: MessageSquare, title: 'Real Interview Simulation', desc: 'Mock interviews modeled on actual consular, embassy, and immigration interviews — so the real thing feels familiar.' },
+  { Icon: Users, title: 'Mentors Who Know the Process', desc: 'Coached by migration experts who understand exactly what officers ask and what they look for in a business applicant.' },
+  { Icon: Briefcase, title: 'Your Business, Clearly Presented', desc: 'Learn to explain your business, investment, and intent with clarity and confidence — no hesitation, no red flags.' },
+  { Icon: Globe, title: 'Country-Specific Preparation', desc: 'Tailored coaching for the USA, Australia, New Zealand, and the EU — each pathway has its own questions and expectations.' },
 ]
 
-// Testimonials. NOTE: names & roles are placeholders — replace with real learners.
+// Testimonials. NOTE: names & roles are placeholders — replace with real clients.
 export const testimonials = [
-  { quote: 'Phoenix Academy completely changed the way I approached interviews. The mock sessions and feedback helped me become confident and prepared.', name: 'Ananya Sharma', initials: 'AS', role: 'Software Engineer', program: '🎯 Interview Mastery' },
-  { quote: 'The career guidance program gave me clarity, structure, and a practical roadmap for my professional growth.', name: 'Daniel Okafor', initials: 'DO', role: 'Marketing Professional', program: '🚀 Career Acceleration' },
-  { quote: 'The mentors genuinely care about your success and provide guidance that is relevant, actionable, and easy to implement.', name: 'Priya Menon', initials: 'PM', role: 'Aspiring Entrepreneur', program: '💡 Entrepreneurship Development' },
+  { quote: "I've run my manufacturing business for fifteen years, but the US consular interview terrified me. The mock sessions made the real thing feel routine — approved on the first attempt.", name: 'Rajesh Patel', initials: 'RP', role: 'Manufacturing Business Owner', program: '🇺🇸 USA · L-1 Visa' },
+  { quote: 'They knew exactly what the officer would ask. By interview day I could present my business, my investment, and my plans without a moment of hesitation.', name: 'Mei Lin Chen', initials: 'MC', role: 'Trading Company Director', program: '🇦🇺 Australia · National Innovation Visa' },
+  { quote: 'Phoenix prepared my whole family for the interview and made sure our documents told one clear story. Their guidance was the difference.', name: 'Andrei Popescu', initials: 'AP', role: 'Technology Founder & Investor', program: '🇪🇺 European Union · Citizenship' },
 ]
 
 // "About Phoenix Academy" supporting bullet points
 export const aboutPoints = [
-  'Skills aligned with real employer expectations',
-  'Mentorship from experienced industry professionals',
-  'Clear, structured pathways from learning to opportunity',
-  'Support for employment, growth, entrepreneurship & global expansion',
+  'Built for established business owners, directors & investors',
+  'Mock interviews modeled on real consular & embassy interviews',
+  'Country-specific coaching for the USA, Australia, NZ & EU',
+  'Preparation for you — and your family’s interview too',
 ]
 
-// The four core programs (rendered in the Programs section)
+// The four core training programs (rendered in the Programs section)
 export const programs = [
   {
     Icon: Mic,
-    titleA: 'Interview Mastery', titleB: 'Program',
-    tagline: 'Interviews & Communication',
-    desc: 'Learn how to confidently handle HR interviews, technical interviews, behavioral assessments, and professional discussions.',
-    keyAreas: ['Interview Techniques', 'Communication Skills', 'Confidence Building', 'Mock Interviews', 'Personal Branding'],
-    cta: 'Enroll Now',
-    artClass: 'visa-art--usa', region: 'Interviews · Communication · Confidence',
-    stat: '500+', statLabel: 'Mock Interviews',
+    titleA: 'Visa Interview', titleB: 'Mastery',
+    tagline: 'The Core Mock-Interview Program',
+    desc: 'Rehearse the interview until it feels routine — answering officer questions with confidence, composure, and consistency under pressure.',
+    keyAreas: ['Realistic Mock Interviews', 'Officer Q&A Drills', 'Answering With Confidence', 'Handling Tough Questions', 'Delivery & Body Language'],
+    cta: 'Begin Preparation',
+    artClass: 'visa-art--usa', region: 'Mock interviews · Q&A · Confidence',
+    stat: '98%', statLabel: 'Interview Success Rate',
   },
   {
-    Icon: Rocket,
-    titleA: 'Career Acceleration', titleB: 'Program',
-    tagline: 'Employability & Growth',
-    desc: 'Designed for students and professionals seeking career growth and improved employability.',
-    keyAreas: ['Resume Building', 'LinkedIn Optimization', 'Networking Strategies', 'Job Search Planning', 'Career Roadmapping'],
-    cta: 'Enroll Now',
-    artClass: 'visa-art--au', region: 'Resume · LinkedIn · Job Search',
-    stat: '95%', statLabel: 'Satisfaction Rate',
+    Icon: Presentation,
+    titleA: 'Business Case', titleB: 'Presentation',
+    tagline: 'Present Your Business Convincingly',
+    desc: 'Tell the story of your business, investment, and genuine intent so an officer understands it in minutes — and believes it.',
+    keyAreas: ['Telling Your Business Story', 'Investment & Financials Narrative', 'Proving Genuine Intent', 'Source-of-Funds Clarity', 'Avoiding Red Flags'],
+    cta: 'Begin Preparation',
+    artClass: 'visa-art--au', region: 'Story · Investment · Intent',
+    stat: '1000+', statLabel: 'Owners Coached',
   },
   {
-    Icon: Globe,
-    titleA: 'Business Migration', titleB: 'Readiness',
-    tagline: 'USA · Australia · New Zealand · EU',
-    desc: 'Get ready for international opportunities across the USA, Australia, New Zealand, and the European Union — with structured guidance on business planning, compliance, investment readiness, and market entry, informed by Phoenix Business Advisory.',
-    keyAreas: ['USA, Australia, NZ & EU Pathways', 'Business Planning', 'Compliance Fundamentals', 'Investment Readiness', 'Expansion Strategy'],
+    Icon: FileCheck,
+    titleA: 'Documentation', titleB: 'Readiness',
+    tagline: 'Know Your File Inside Out',
+    desc: 'Walk through every document in your application so your answers and your paperwork tell one consistent, watertight story.',
+    keyAreas: ['Full Document Walkthrough', 'Petition & Application Familiarity', 'Consistency Checks', 'Evidence Mapping', 'Common Documentation Pitfalls'],
     cta: 'Learn More',
-    artClass: 'visa-art--nz', region: 'USA · Australia · NZ · EU',
+    artClass: 'visa-art--nz', region: 'Documents · Evidence · Consistency',
+    stat: 'Zero', statLabel: 'Surprises on the Day',
+  },
+  {
+    Icon: MapPin,
+    titleA: 'Country-Specific', titleB: 'Briefing',
+    tagline: 'USA · Australia · New Zealand · EU',
+    desc: 'Targeted preparation for your destination — each country’s officers, process, and expectations are different, and we prepare you for yours.',
+    keyAreas: ['USA L-1 Consular Interview', 'Australia NIV Assessment', 'NZ Investor Interview', 'EU CBI Due Diligence', 'Officer Expectations by Country'],
+    cta: 'Begin Preparation',
+    artClass: 'visa-art--eu', region: 'USA · Australia · NZ · EU',
     stat: '4', statLabel: 'Destination Markets',
   },
-  {
-    Icon: Lightbulb,
-    titleA: 'Entrepreneurship', titleB: 'Development',
-    tagline: 'Build & Grow Ventures',
-    desc: 'Build the mindset, skills, and strategic knowledge required to launch and grow successful ventures.',
-    keyAreas: ['Business Foundations', 'Growth Strategy', 'Market Research', 'Sales Fundamentals', 'Leadership Development'],
-    cta: 'Enroll Now',
-    artClass: 'visa-art--eu', region: 'Mindset · Strategy · Leadership',
-    stat: 'Founder', statLabel: 'Mindset & Skills',
-  },
 ]
 
-// "How It Works" — the learning process (5 steps)
+// "How It Works" — the interview-preparation journey (5 steps)
 export const processSteps = [
-  { num: '1', title: 'Assessment', desc: 'Understand your current position, goals, strengths, and improvement areas.' },
-  { num: '2', title: 'Personalized Learning Plan', desc: 'Receive a customized roadmap designed around your objectives.' },
-  { num: '3', title: 'Expert Training', desc: 'Participate in practical learning sessions focused on real-world outcomes.' },
-  { num: '4', title: 'Mentorship & Feedback', desc: 'Get continuous support, evaluations, and improvement recommendations.' },
-  { num: '5', title: 'Career & Business Readiness', desc: 'Apply your knowledge confidently in interviews, workplaces, and business environments.' },
+  { num: '1', title: 'Assessment', desc: 'We review your profile, business, and visa pathway — and pinpoint where the interview is most likely to challenge you.' },
+  { num: '2', title: 'Personalized Prep Plan', desc: 'You receive a tailored roadmap focused on your destination, your business case, and your weak spots.' },
+  { num: '3', title: 'Coaching & Drills', desc: 'Expert sessions sharpen your answers, your business story, and your command of every document.' },
+  { num: '4', title: 'Mock Interviews', desc: 'Realistic simulations with honest feedback, repeated until you are calm and interview-ready.' },
+  { num: '5', title: 'Interview Day', desc: 'You walk into the real interview prepared, confident, and ready to present your case.' },
 ]
 
-// "Empowering Future Professionals" — success metrics
+// "Trusted by business owners" — success metrics
 export const metrics = [
-  { num: '1000+', label: 'Learners Trained' },
-  { num: '95%', label: 'Program Satisfaction Rate' },
-  { num: '500+', label: 'Mock Interviews Conducted' },
-  { num: '100+', label: 'Career Mentoring Sessions' },
+  { num: '1000+', label: 'Business Owners Coached' },
+  { num: '98%', label: 'Interview Success Rate' },
+  { num: '2500+', label: 'Mock Interviews Conducted' },
+  { num: '4', label: 'Visa Destinations Covered' },
 ]
 
 // Parent practice (Phoenix Business Advisory) — credibility stats

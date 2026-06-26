@@ -57,9 +57,7 @@
 }
 .hero__title em {
   font-style: italic;
-  background-image: linear-gradient(transparent 62%, rgba(196,136,47,0.32) 62%);
-  background-repeat: no-repeat;
-  padding: 0 2px;
+  color: #b07d2a;
 }
 .hero__lead {
   font-size: 18px;

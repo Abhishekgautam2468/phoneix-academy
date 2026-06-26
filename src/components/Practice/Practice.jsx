@@ -7,19 +7,19 @@ export default function Practice() {
     <section id="about" className="practice">
       <div className="practice__inner">
         <div className="practice__photo">
-          <img className="practice__img" src="/images/about-mentorship.jpg" alt="A mentor guiding a learner during a training session at Phoenix Academy" />
+          <img className="practice__img" src="/images/about-mentorship.jpg" alt="A Phoenix Academy mentor preparing a business owner for their visa interview" />
         </div>
         <div>
           <div className="eyebrow--gold">About Us</div>
-          <h2 className="practice__title">More than training. <em>A pathway to success.</em></h2>
-          <p className="practice__text">Phoenix Academy bridges the gap between education and real-world opportunity. As the training arm of Phoenix Business Advisory, we help individuals develop industry-relevant skills, professional confidence, and strategic career direction through structured learning and expert mentorship.</p>
-          <p className="practice__text practice__text--last">Our mission is simple: prepare people for the opportunities they deserve. Whether your goal is employment, career growth, entrepreneurship, or international expansion, we equip you with practical tools and actionable guidance to move forward with confidence.</p>
+          <h2 className="practice__title">More than paperwork. <em>Real interview readiness.</em></h2>
+          <p className="practice__text">Phoenix Academy is the interview-preparation and migration-readiness arm of Phoenix Business Advisory. We work exclusively with established business owners, directors, and investors — preparing them to face their migration visa interview with clarity and confidence.</p>
+          <p className="practice__text practice__text--last">A strong application gets you to the interview. We make sure you’re ready for it — rehearsing your answers, sharpening your business case, and knowing your documents inside out, so nothing catches you off guard on the day.</p>
           <ul className="practice__points">
             {aboutPoints.map((pt) => (
               <li key={pt} className="practice__point"><span className="dot-gold" />{pt}</li>
             ))}
           </ul>
-          <a href="#contact" className="link-gold-underline">Start Your Journey <ArrowIcon size={13} /></a>
+          <a href="#contact" className="link-gold-underline">Request a Consultation <ArrowIcon size={13} /></a>
         </div>
       </div>
     </section>

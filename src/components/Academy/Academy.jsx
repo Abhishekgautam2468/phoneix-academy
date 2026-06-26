@@ -8,7 +8,7 @@ export default function Academy() {
       <div className="academy__inner">
         <div className="academy__head">
           <div className="eyebrow--gold">How It Works</div>
-          <h2 className="academy__title">A structured path <em>to growth.</em></h2>
+          <h2 className="academy__title">A structured path <em>to interview day.</em></h2>
         </div>
         <div className="academy__grid">
           {processSteps.map((s) => (

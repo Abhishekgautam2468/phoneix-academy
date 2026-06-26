@@ -4,8 +4,8 @@ export default function TopBar() {
   return (
     <div className="topbar">
       <span className="topbar__left">
-        <span className="topbar__badge">NOW ENROLLING</span>
-        Career training, interview prep & mentorship — speak to an advisor 7 days
+        <span className="topbar__badge">INTERVIEW PREPARATION</span>
+        Speak with a senior migration advisor — 7 days a week, 9am–7pm
       </span>
       <span className="topbar__right">
         <a href="tel:+18001234567" className="topbar__phone">+1 (800) 123-4567</a>

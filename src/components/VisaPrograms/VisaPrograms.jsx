@@ -11,8 +11,8 @@ export default function VisaPrograms() {
     <section id="programs" className="visa">
       <div className="visa__inner">
         <div className="eyebrow--gold eyebrow--center">Our Programs</div>
-        <h2 className="visa__title">Training designed for <em>career &amp; business success.</em></h2>
-        <p className="visa__lead">Structured, mentor-led programs that take you from learning to real-world readiness — with practical skills you can apply immediately.</p>
+        <h2 className="visa__title">Interview preparation, <em>built for business migration.</em></h2>
+        <p className="visa__lead">Targeted, expert-led coaching that gets established business owners ready for every part of the visa interview — across all four destination markets.</p>
 
         {programs.map((p, i) => {
           const artSide = i % 2 === 0 ? 'right' : 'left'

@@ -7,8 +7,8 @@ export default function Testimonials() {
     <section className="testimonials">
       <div className="testimonials__inner">
         <div className="eyebrow--gold eyebrow--center">Testimonials</div>
-        <h2 className="testimonials__title"><em>Real growth.</em> Real results.</h2>
-        <p className="testimonials__lead">Hear from learners who transformed their careers with Phoenix Academy.</p>
+        <h2 className="testimonials__title"><em>Prepared.</em> And approved.</h2>
+        <p className="testimonials__lead">Business owners who walked into their visa interview ready — and walked out approved.</p>
         <div className="testimonials__grid">
           {testimonials.map((t) => (
             <div key={t.name} className="testimonial">
